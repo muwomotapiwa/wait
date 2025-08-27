@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Battery Boss — From Mathew to Biance</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="card" role="main" aria-live="polite">
+    <h1>Wait until your laptop battery dies — then you'll know who's boss.</h1>
+    <p class="tagline">Friendly reminder from <strong>Mathew</strong> to <strong>Biance</strong> 😄</p>
+
+    <div id="counterWrap">
+      <div id="count" class="count" aria-label="Countdown">100</div>
+      <div class="progress" aria-hidden="true" style="width: min(520px, 92%);">
+        <b id="bar" style="--pct: 100%"></b>
+      </div>
+      <p class="message">Counting down from 100… when we hit zero, the laptop taps out. 💼➡️🪫</p>
+    </div>
+
+    <div id="dead" class="dead" role="img" aria-label="Laptop with low battery">
+      💻🪫
+    </div>
+
+    <div class="actions">
+      <button id="restartBtn" title="Restart the countdown">Restart</button>
+      <button id="instantBtn" class="danger" title="Skip to the dramatic reveal">Instant 🪫</button>
+    </div>
+
+    <div class="footer">From Mathew to Biance · Battery Boss Edition</div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
